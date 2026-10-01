@@ -19,7 +19,7 @@ switch ($customer_type)
         else if ($invoice_subtotal >= 250 && $invoice_subtotal < 500) {
             $discount_percent = .25;
         }
-        else if ($invoice_subtotal <= 500)
+        else if ($invoice_subtotal >= 500)
         {
             $discount_percent = .3;
         }
@@ -61,7 +61,7 @@ if ($customer_type == 'R' || $customer_type == 'r')
     else if ($invoice_subtotal >= 250 && $invoice_subtotal < 500) {
         $discount_percent = .25;
     }
-    else if ($invoice_subtotal <= 500)
+    else if ($invoice_subtotal >= 500)
     {
         $discount_percent = .3;
     }
