@@ -48,6 +48,7 @@ switch ($customer_type)
         break;
 }
 
+
 $discount_amount = $invoice_subtotal * $discount_percent;
 $invoice_total = $invoice_subtotal - $discount_amount;
 
