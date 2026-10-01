@@ -12,11 +12,11 @@
         <div id="data" >
             <label>Customer Type:</label>
             <input type="text" name="type" 
-                   value="<?php echo htmlspecialchars($customer_type); ?>"><br>
+                   value="<?php echo htmlspecialchars($customer_type) ?>"><br>
 
             <label>Invoice Subtotal:</label>
             <input type="text" name="subtotal"
-                   value="<?php echo htmlspecialchars($invoice_subtotal); ?>"><br>
+                   value="<?php echo htmlspecialchars($invoice_subtotal) ?>"><br>
 
             <label>Discount Percent:</label>
             <input type="text" disabled
