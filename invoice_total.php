@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
 <head>
     <title>Invoice Total Calculator</title>
     <link rel="stylesheet" href="main.css" />
@@ -12,23 +12,23 @@
         <div id="data" >
             <label>Customer Type:</label>
             <input type="text" name="type" 
-                   value="<?php echo htmlspecialchars($customer_type) ?>"><br>
+                   value="<?php echo htmlspecialchars($customer_type ?? '') ?>"><br>
 
             <label>Invoice Subtotal:</label>
             <input type="text" name="subtotal"
-                   value="<?php echo htmlspecialchars($invoice_subtotal) ?>"><br>
+                   value="<?php echo htmlspecialchars($invoice_subtotal ?? '') ?>"><br>
 
             <label>Discount Percent:</label>
             <input type="text" disabled
-                   value="<?php echo $percent; ?>"><span>%</span><br>
+                   value="<?php echo ($percent ?? 0); ?>"><span>%</span><br>
 
             <label>Discount Amount:</label>
             <input type="text" disabled
-                   value="<?php echo $discount; ?>"><br>
+                   value="<?php echo ($discount ?? 0); ?>"><br>
 
             <label>Invoice Total:</label>
             <input type="text" disabled
-                   value="<?php echo $total; ?>"><br>
+                   value="<?php echo ($total ?? 0); ?>"><br>
         </div>
         <div id="buttons" >
             <label>&nbsp;</label>

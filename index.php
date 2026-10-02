@@ -4,6 +4,8 @@ $customer_type = filter_input(INPUT_POST, 'type');
 $invoice_subtotal = filter_input(INPUT_POST, 'subtotal');
 $discount_percent = 0;
 
+//invoice_total was corrected to fix null values being displayed on launch
+
 //Handled with a Switch statement
 switch ($customer_type)
 {
